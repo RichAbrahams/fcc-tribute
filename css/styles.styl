@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: white
+}
+
+*
+  margin: 0
+  padding 0
+
+.wrapper {
+  width: 100%;
+  font-family: 'Roboto', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header
+  font-size 64px
+  font-style: normal;
+  font-weight: 100;
+  text-align: center;
+  margin-top 1rem
+  min-height 100vh
+
+  @media screen and (max-width: 700px)
+    width 100%
+    min-height 0
+
+hr
+  margin-top: 1rem
+
+.headerImage
+  width: 750px;
+  margin-top: 2rem;
+
+  @media screen and (max-width: 700px)
+    width 100%
+
+main
+  width 750px
+  height: 100%
+  margin-top 50px
+  display: flex
+  flex-direction: column;
+
+  @media screen and (max-width: 700px)
+    width 100%
+    margin-top 0
+
+.dateInfo, .dateInfoAlt
+  margin-top 75px
+
+  @media screen and (max-width: 700px)
+    padding-left 30px
+    padding-right: 30px
+    margin-top 75px
+
+.dateInfoAlt
+  text-align: right;
+
+.topOfMain
+  margin-top 0
+
+  @media screen and (max-width: 700px)
+    margin-top 75px
+
+.sectionContainer
+  display: flex
+  flex-direction: row
+  margin-top 5em
+
+  @media screen and (max-width: 700px)
+    flex-direction: column-reverse;
+    align-items: center
+    margin-top 50px
+
+.textCont
+  width 50%
+  margin-left 30px
+
+  @media screen and (max-width: 700px)
+    margin-left  0
+    margin-top 50px
+
+.imageCont
+  width 50%
+  display: flex;
+  justify-content: flex-end;
+  margin-right 25px
+
+  @media screen and (max-width: 700px)
+    justify-content: center;
+    margin: 0
+
+.imageCont img
+  height: auto;
+  width: auto;
+  max-width: 350px;
+  max-height: 350px;
+
+.imageContAlt img
+  height: auto;
+  width: auto
+  max-width: 350px;
+  max-height: 350px;
+
+.textContAlt
+  display: flex;
+  flex-direction: column
+  width 50%
+
+  @media screen and (max-width: 700px)
+    justify-content: center;
+
+.imageContAlt
+  width 50%
+  display: flex;
+  justify-content: flex-start;
+  margin-left 25px
+
+  @media screen and (max-width: 700px)
+    justify-content: center;
+    margin-left 0
+    margin-top 50px
+
+.movieDate
+  opacity: 0
+  animation-duration: 500ms;
+  animation-iteration-count: 1
+  animation-timing-function: linear;
+
+footer
+  min-height: 30vh;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: center;
+  padding-right: 300px;
+
+
+  @media screen and (max-width: 700px)
+    justify-content: center;
+    padding-right 0
+
+footer a:link    {color:black; text-decoration:none}
+footer a:visited {color:black; text-decoration:none}
+footer a:hover   {color:black; text-decoration:none}
+footer a:active  {color:black; text-decoration:none}
+
+@keyframes dateLeft {
+  0% {padding-left: 200px; opacity: 0}
+  50% {padding-left: 100px; opacity: 0.5}
+  100% {padding-left: 0px; opacity: 1}
+}
+
+@keyframes dateRight {
+  0% {padding-right: 200px; opacity: 0}
+  50% {padding-right: 100px; opacity: 0.5}
+  100% {padding-right: 0px; opacity: 1}
+}
